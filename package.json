@@ -1,0 +1,25 @@
+{
+  "name": "multi-format-parser-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CSV, JSON, and XML file parsers for Assignment 1",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "check": "npm run build && npm test"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
